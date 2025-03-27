@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/etEmailOrPhone"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="15dp"
+            android:hint="@string/email_or_phone"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:padding="8dp"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textColorHint="@color/black"
+            tools:ignore="TextFields" />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="15dp"
+            android:hint="@string/login_password"
+            android:textSize="24sp"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="@color/black" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="420dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="#B5FFFFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        tools:ignore="VisualLintBounds">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/forgotPasswordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/forgot_password"
+                android:textAlignment="center"
+                android:textColor="#0D3329" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#30624A"
+                android:text="@string/login"
+                android:textSize="20sp"
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/btnSendOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_otp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textAlignment="center"
+                android:textColor="#263238"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/createAccountButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#8B031D2A"
+                android:text="@string/create_an_account"
+                android:textSize="20sp"
+                android:textColorHint="#216653"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

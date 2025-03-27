@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyHealth"
+        tools:targetApi="35">
+        <activity
+            android:name=".doctorside.doctorside_dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_doctorside_dashboard" />
+        <activity
+            android:name=".activity.TopDoctorsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SignupActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ForgetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SplashActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

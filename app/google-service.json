@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "535476115411",
+    "firebase_url": "https://my-health-9caa4-default-rtdb.firebaseio.com",
+    "project_id": "my-health-9caa4",
+    "storage_bucket": "my-health-9caa4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535476115411:android:77b87f04b4d6daf4d38126",
+        "android_client_info": {
+          "package_name": "com.example.myhealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-fUnEDt3J5mJj_TAna953W5XPtvk09QA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myhealth.doctorside.ui.home.DoctorAppointmentFragment"
+        android:label="Appointment"
+        tools:layout="@layout/fragment_appointment_doctor" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myhealth.doctorside.ui.dashboard.DoctorPatientRecordsFragment"
+        android:label="Patient"
+        tools:layout="@layout/fragment_records_patient" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myhealth.doctorside.ui.notifications.DoctorAvailabilityFragment"
+        android:label="Availability"
+        tools:layout="@layout/fragment_availability_doctor" />
+</navigation>
